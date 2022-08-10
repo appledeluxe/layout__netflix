@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+body{
+    min-height: 100vh;
+    background-color: #141414;
+    font-family: 'Jost';
+    color: #f5f5f5;
+    margin: 0 1em 0em 1em;
+}
+.header{
+   display: flex;
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+    background-color: #141414;
+   position: fixed;
+}
+.main{
+    padding: 9em 0em 0em 0em;
+}
+.section-title{
+        font-size: 1em;
+        padding: 1em;
+        font-weight: bold;
+}
+
+#top-text:before{
+    content: "5";
+}
+
+.header-logo{
+    display: inline-flex;
+    justify-content: start;
+    width: 75%;
+    padding: 1em;
+}
+.platform-title{
+    align-self: center;
+}
+.header-buttons{
+    display: flex;
+    align-self: center;
+    font-weight: bold;
+    justify-content:space-between;
+    gap: 5em;
+}
+
+.main img{
+    transition: all 300ms;
+    width: 100%;
+}
+
+img:hover{
+   transform: scale(1.15);
+}
+
+/* order more famous film */
+.top .top-item-1{
+order: 5;
+}
+.top .top-item-2{
+order: 4;
+}
+.top .top-item-3{
+order: 3;
+}
+.top .top-item-4{
+order: 2;
+}
+.top .top-item-5{
+order: 1;
+}
+
+@media screen and (min-width: 1281px) {
+  
+    .top{
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+    }
+
+    .first{
+        display: grid;
+        grid-template-columns:repeat(6,1fr) ;
+    }
+
+    .second{
+        display: grid;
+         grid-template-columns:repeat(6,1fr) ;
+    }
+
+    }
+@media screen and (max-width: 1280px){
+     #top-text:before{
+    content: "3";
+    }
+    .top-item-1{
+        display: none;
+    }
+     .top-item-2{
+        display: none;
+    }
+
+    .platform-title{
+    visibility: hidden;
+    }
+
+    .top{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .first{
+        display: grid;
+        
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .second{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .first .item-5{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .first .item-6{
+        grid-column-start:3 ;
+        grid-column-end: 5;
+    }
+
+}
+@media screen and (max-width: 415px){
+     #top-text:before{
+    content: "3";
+    }
+    .top-item-1{
+        display: none;
+    }
+     .top-item-2{
+        display: none;
+    }
+
+    .platform-title{
+    visibility: hidden;
+    }
+    
+    .top{
+    display: grid;
+    grid-template-columns: 1fr ;
+    }
+    .first{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-title{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .header-buttons{
+    display: flex;
+    justify-content: start;
+    justify-content: space-around;
+    width: 100%;
+    gap: 0em;
+    }
+    
+}
+
