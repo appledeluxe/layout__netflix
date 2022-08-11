@@ -12,7 +12,6 @@ body{
    width: 100%;
    z-index: 999;
     background-color: #141414;
-   position: fixed;
 }
 .main{
     padding: 9em 0em 0em 0em;
@@ -108,10 +107,11 @@ order: 1;
     grid-template-columns: repeat(3, 1fr);
     }
     .first{
+
         display: grid;
-        
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
+
     }
 
     .second{
@@ -162,11 +162,35 @@ order: 1;
     }
     .header-buttons{
     display: flex;
-    justify-content: start;
     justify-content: space-around;
     width: 100%;
     gap: 0em;
     }
+    .first .item-1{
+        grid-column-start:1 ;
+        grid-column-end: 5;
+    }
+    .first .item-2{
+        grid-column-start:1 ;
+        grid-column-end: 5;
+    }
+    .first .item-3{
+        grid-column-start:1 ;
+        grid-column-end: 5;
+    }
+    .first .item-4{
+        grid-column-start:1 ;
+        grid-column-end: 5;
+    }
+    .first .item-5{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .first .item-6{
+        grid-column-start:1 ;
+        grid-column-end: 5;
+    }
+    
     
 }
 
